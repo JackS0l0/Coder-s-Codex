@@ -1,0 +1,43 @@
+{% load static %}
+<header>
+    <div class="headerClass">
+        <div class="float0">
+            <a href="#">Discounts for opening</a>
+            <button class="btn"><i class="bi bi-x-circle-fill"></i></button>
+        </div>
+        <div class="float1">
+            <span>
+                <a href="{% url 'homepage' %}">Coder's Codex</a>
+            </span>
+            <span>
+                <a href="#">Templates</a>
+                <a href="#">Blog</a>
+                <a href="#">Contact</a>
+                <a href="#">About me</a>
+            </span>
+            <span>
+                <div class="searchClass">
+                    <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"><i class="bi bi-search"></i></button>
+                    <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+                        <div class="offcanvas-body">
+                            <input type="search" name="" placeholder="Search article" id="">
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-list"></i></button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Templates</a></li>
+                        <li><a class="dropdown-item" href="#">Blog</a></li>
+                        <li><a class="dropdown-item" href="#">Contact</a></li>
+                        <li><a class="dropdown-item" href="#">About</a></li>
+                    </ul>
+                </div>
+            </span>
+        </div>
+        <div class="float2">
+            <p class="trend">Trending:</p>
+            <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque voluptates, cumque molestiae eaque est necessitatibus non dolor aspernatur tenetur fuga nulla autem? Quibusdam iusto, temporibus dolores illo neque praesentium nihil!</a>
+        </div>
+    </div>
+</header>

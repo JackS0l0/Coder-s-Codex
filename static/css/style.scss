@@ -1,0 +1,210 @@
+$blue: rgb(0, 150, 255);
+$shadow: rgba(0, 0, 0, 0.5);
+$font-simple: 1.2vw;
+$grey: #595d69;
+$grey-shadow: rgba(33, 99, 232, 0.1);
+@font-face {
+    font-family: nunitosans;
+    src: url(../font/NunitoSans_10pt-Regular.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    width: 100%;
+    max-width: 1920px;
+    height: 100%;
+    margin: auto;
+}
+body{
+    font-family: nunitosans;
+    a{
+        text-decoration: none;
+    }
+    p{
+        margin: 0;
+        padding: 0;
+    }
+    font-size: $font-simple;
+    header{
+        .headerClass{
+            .float0{
+                display: flex;
+                font-size: 1.3vw;
+                padding: 0.7vw 0;
+                align-items: center;
+                padding: 1vw;
+                a{
+                    color: white;
+                }
+                background-color: #ff9d00;
+                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg stroke='%23000' stroke-width='66.7' stroke-opacity='0.05' %3E%3Ccircle fill='%23ff9d00' cx='0' cy='0' r='1800'/%3E%3Ccircle fill='%23fb8d17' cx='0' cy='0' r='1700'/%3E%3Ccircle fill='%23f47d24' cx='0' cy='0' r='1600'/%3E%3Ccircle fill='%23ed6e2d' cx='0' cy='0' r='1500'/%3E%3Ccircle fill='%23e35f34' cx='0' cy='0' r='1400'/%3E%3Ccircle fill='%23d85239' cx='0' cy='0' r='1300'/%3E%3Ccircle fill='%23cc453e' cx='0' cy='0' r='1200'/%3E%3Ccircle fill='%23be3941' cx='0' cy='0' r='1100'/%3E%3Ccircle fill='%23b02f43' cx='0' cy='0' r='1000'/%3E%3Ccircle fill='%23a02644' cx='0' cy='0' r='900'/%3E%3Ccircle fill='%23901e44' cx='0' cy='0' r='800'/%3E%3Ccircle fill='%23801843' cx='0' cy='0' r='700'/%3E%3Ccircle fill='%236f1341' cx='0' cy='0' r='600'/%3E%3Ccircle fill='%235e0f3d' cx='0' cy='0' r='500'/%3E%3Ccircle fill='%234e0c38' cx='0' cy='0' r='400'/%3E%3Ccircle fill='%233e0933' cx='0' cy='0' r='300'/%3E%3Ccircle fill='%232e062c' cx='0' cy='0' r='200'/%3E%3Ccircle fill='%23210024' cx='0' cy='0' r='100'/%3E%3C/g%3E%3C/svg%3E");
+                background-attachment: fixed;
+                background-size: cover;
+                button{
+                    position: absolute;
+                    right: 2vw;
+                    color: white;
+                }
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+            }
+            .float1{
+                margin: 1vw 3vw;
+                font-size: 1.8vw;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                span{
+                    display: flex;
+                    align-items: center;
+                    width: 30vw;
+                    a{
+                        color: $grey;
+                    }
+                    a:hover{
+                        color: $blue;
+                    }
+                    .searchClass{
+                        .offcanvas{
+                            background: none;
+                            border: 0;
+                            height: fit-content;
+                            .offcanvas-body{
+                                input{
+                                    width: 100%;
+                                    padding: 10px;
+                                    font-size: 1.6vw;
+                                    outline: none;
+                                }
+                            }
+                        }
+                    }
+                }
+                span:nth-child(2){
+                    font-size: 1.4vw;
+                    justify-content: center;
+                    a{
+                        margin: 0 0.5vw;
+                    }
+                }
+                span:nth-child(3){
+                    justify-content: flex-end;
+                }
+            }
+            .float2{
+                margin: 1vw 3vw;
+                padding: 0.5vw;
+                background-color: $grey-shadow;
+                border-radius: 0.2vw;
+                color: white;
+                display: flex;
+                align-items: center;
+                .trend{
+                    border-radius: 0.2vw;
+                    padding: 0.5vw 1vw;
+                    background-color: $blue;
+                    width: fit-content;
+                    margin-right: 1vw;
+                }
+                a{
+                    color: $grey;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    white-space: nowrap;
+                }
+                a:hover{
+                    color: $blue;
+                }
+            }
+        }
+    }
+    main{
+        .mainClass{
+            .welcomeClass{
+                display: flex;
+                margin: 3vw;
+                justify-content: space-between;
+                .block1{
+                    .box{
+                        background-color: $grey-shadow;
+                        width: 46vw;
+                        height: 55vh;
+                        border-radius: 1vw;
+                    }
+                }
+                .block2{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    .float1{
+                        .box{
+                            background-color: $grey-shadow;
+                            width: 46vw;
+                            height: 27vh;
+                            border-radius: 1vw;
+                        }
+                    }
+                    .float2{
+                        display: flex;
+                        justify-content: space-between;
+                        .box{
+                            background-color: $grey-shadow;
+                            width: 22vw;
+                            height: 26vh;
+                            border-radius: 1vw;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 999px) {
+    body{
+        header{
+            .headerClass{
+                .float0{
+                    font-size: 3vw;
+                }
+                .float1{
+                    font-size: 4vw;
+                    span:nth-child(2){
+                        display: none;
+                    }
+                    i{
+                        font-size: 3vw;
+                    }
+                }
+                .float2{
+                    font-size: 2vw;
+                }
+            }
+        }
+        main{
+            .mainClass{
+                .welcomeClass{
+                    .block1{
+                        .box{
+                            height: 23vh;
+                        }
+                    }
+                    .block2{
+                        .float1{
+                            .box{
+                                height: 11vh;
+                            }
+                        }
+                        .float2{
+                            .box{
+                                height: 11vh;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

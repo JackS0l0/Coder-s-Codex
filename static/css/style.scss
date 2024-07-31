@@ -21,6 +21,7 @@ body{
     font-family: nunitosans;
     a{
         text-decoration: none;
+        font-size: $font-simple;
     }
     p{
         margin: 0;
@@ -133,6 +134,40 @@ body{
                         width: 46vw;
                         height: 55vh;
                         border-radius: 1vw;
+                        position: relative;
+                        .img{
+                            img{
+                                width: 100%;
+                                height: 55vh;
+                                border-radius: 1vw;
+                                object-fit: cover;
+                                filter: brightness(50%);
+                                object-position: top;
+                            }
+                        }
+                        .info{
+                            position: absolute;
+                            bottom: 2vw;
+                            left: 2vw;
+                            display: flex;
+                            flex-direction: column;
+                            a{
+                                color: white;
+                                font-size: 2vw;
+                                display: flex;
+                                align-items: center;
+                                i{
+                                    font-size: 0.6vw;
+                                    margin-right: 0.5vw;
+                                }
+                            }
+                            .btn{
+                                width: fit-content;
+                                padding: 0.2vw 1vw;
+                                font-size: 1vw;
+                                margin-bottom: 1vw;
+                            }
+                        }
                     }
                 }
                 .block2{
@@ -145,6 +180,38 @@ body{
                             width: 46vw;
                             height: 27vh;
                             border-radius: 1vw;
+                            position: relative;
+                            .img{
+                                img{
+                                    width: 100%;
+                                    height: 27vh;
+                                    border-radius: 1vw;
+                                    object-fit: cover;
+                                    filter: brightness(50%);
+                                    object-position: top;
+                                }
+                            }
+                            .info{
+                                position: absolute;
+                                bottom: 1vw;
+                                left: 1vw;
+                                display: flex;
+                                flex-direction: column;
+                                a{
+                                    color: white;
+                                }
+                                .btn{
+                                    margin-bottom: 1vw;
+                                    font-size: 1vw;
+                                    display: flex;
+                                    align-items: center;
+                                    width: fit-content;
+                                    i{
+                                        margin-right: 0.5vw;
+                                        font-size: 0.6vw;
+                                    }
+                                }
+                            }
                         }
                     }
                     .float2{
@@ -155,8 +222,71 @@ body{
                             width: 22vw;
                             height: 26vh;
                             border-radius: 1vw;
+                            position: relative;
+                            .img{
+                                img{
+                                    width: 100%;
+                                    height: 26vh;
+                                    border-radius: 1vw;
+                                    object-fit: cover;
+                                    filter: brightness(50%);
+                                    object-position: top;
+                                }
+                            }
+                            .info{
+                                position: absolute;
+                                bottom: 1vw;
+                                left: 1vw;
+                                display: flex;
+                                flex-direction: column;
+                                a{
+                                    color: white;
+                                }
+                                .btn{
+                                    margin-bottom: 1vw;
+                                    font-size: 1vw;
+                                    display: flex;
+                                    align-items: center;
+                                    width: fit-content;
+                                    i{
+                                        margin-right: 0.5vw;
+                                        font-size: 0.6vw;
+                                    }
+                                }
+                            }
                         }
                     }
+                }
+            }
+            .welcomeClassMob{
+                display: grid;
+                grid-template-columns: auto;
+                justify-content: center;
+                .box{
+                    width: 90%;
+                    position: relative;
+                    .img{
+                        display: flex;
+                        justify-content: center;
+                        img{
+                            height: 50vh;
+                        }
+                    }
+                    .info{
+                        position: absolute;
+                        bottom: 2vw;
+                    }
+                }        
+            }
+        }
+    }
+}
+@media only screen and (min-width: 1000px){
+    body{
+        main{
+            .mainClass{
+                .welcomeClassMob{
+                    display: none;
                 }
             }
         }
@@ -186,23 +316,7 @@ body{
         main{
             .mainClass{
                 .welcomeClass{
-                    .block1{
-                        .box{
-                            height: 23vh;
-                        }
-                    }
-                    .block2{
-                        .float1{
-                            .box{
-                                height: 11vh;
-                            }
-                        }
-                        .float2{
-                            .box{
-                                height: 11vh;
-                            }
-                        }
-                    }
+                    display: none;
                 }
             }
         }

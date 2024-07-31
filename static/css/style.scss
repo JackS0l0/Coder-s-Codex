@@ -1,6 +1,6 @@
 $blue: rgb(0, 150, 255);
 $shadow: rgba(0, 0, 0, 0.5);
-$font-simple: 1.2vw;
+$font-simple: clamp(2vw, 1.2vw, 2vw);;
 $grey: #595d69;
 $grey-shadow: rgba(33, 99, 232, 0.1);
 @font-face {
@@ -270,11 +270,17 @@ body{
                         justify-content: center;
                         img{
                             height: 50vh;
+                            border-radius: 1vw;
                         }
                     }
                     .info{
                         position: absolute;
+                        display: flex;
+                        flex-direction: column;
                         bottom: 2vw;
+                        a{
+                            font-size: 3vw;
+                        }
                     }
                 }        
             }

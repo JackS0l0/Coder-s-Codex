@@ -16,11 +16,11 @@ html {
 
 body {
   font-family: nunitosans;
-  font-size: 1.2vw;
+  font-size: 2vw;
 }
 body a {
   text-decoration: none;
-  font-size: 1.2vw;
+  font-size: 2vw;
 }
 body p {
   margin: 0;
@@ -262,10 +262,16 @@ body main .mainClass .welcomeClassMob .box .img {
 }
 body main .mainClass .welcomeClassMob .box .img img {
   height: 50vh;
+  border-radius: 1vw;
 }
 body main .mainClass .welcomeClassMob .box .info {
   position: absolute;
+  display: flex;
+  flex-direction: column;
   bottom: 2vw;
+}
+body main .mainClass .welcomeClassMob .box .info a {
+  font-size: 3vw;
 }
 
 @media only screen and (min-width: 1000px) {

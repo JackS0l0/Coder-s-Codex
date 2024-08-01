@@ -7,4 +7,8 @@ class ArticleDetail(DetailView):
     context_object_name = 'article'
     template_name = 'post.html'
     def get_context_data(self, **kwargs):
-        pass
+        data=super(ArticleDetail,self).get_context_data(**kwargs)
+        data['title']=Article.objects.get(pk=self.kwargs['pk'])
+        data['categories']=Categories.objects.all().order_by('name')
+        data['topadvertising']=Topadvertising.objects.all()[0:1]
+        return data

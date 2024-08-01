@@ -16,11 +16,11 @@ html {
 
 body {
   font-family: nunitosans;
-  font-size: 2vw;
+  font-size: 1.2vw;
 }
 body a {
   text-decoration: none;
-  font-size: 2vw;
+  font-size: 1.2vw;
 }
 body p {
   margin: 0;
@@ -251,27 +251,53 @@ body main .mainClass .welcomeClassMob {
   display: grid;
   grid-template-columns: auto;
   justify-content: center;
+  margin: 3vw 0;
+  row-gap: 3vw;
+  -moz-column-gap: 3vw;
+       column-gap: 3vw;
 }
 body main .mainClass .welcomeClassMob .box {
-  width: 90%;
   position: relative;
+  display: flex;
+  justify-content: center;
 }
 body main .mainClass .welcomeClassMob .box .img {
   display: flex;
   justify-content: center;
 }
-body main .mainClass .welcomeClassMob .box .img img {
+body main .mainClass .welcomeClassMob .box .img a img {
   height: 50vh;
+  width: 100%;
   border-radius: 1vw;
+  filter: brightness(50%);
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
 }
 body main .mainClass .welcomeClassMob .box .info {
   position: absolute;
   display: flex;
+  left: 2vw;
   flex-direction: column;
   bottom: 2vw;
 }
 body main .mainClass .welcomeClassMob .box .info a {
-  font-size: 3vw;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+body main .mainClass .welcomeClassMob .box .info .btn {
+  font-size: 2vw;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.5vw 1vw;
+  border-radius: 0.6vw;
+  margin-bottom: 1vw;
+}
+body main .mainClass .welcomeClassMob .box .info .btn i {
+  margin-right: 1vw;
+  font-size: 1.6vw;
 }
 
 @media only screen and (min-width: 1000px) {
@@ -280,6 +306,12 @@ body main .mainClass .welcomeClassMob .box .info a {
   }
 }
 @media only screen and (max-width: 999px) {
+  body {
+    font-size: 3vw;
+  }
+  body a {
+    font-size: 3vw;
+  }
   body header .headerClass .float0 {
     font-size: 3vw;
   }

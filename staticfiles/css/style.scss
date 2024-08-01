@@ -1,6 +1,7 @@
 $blue: rgb(0, 150, 255);
 $shadow: rgba(0, 0, 0, 0.5);
-$font-simple: clamp(2vw, 1.2vw, 2vw);;
+$font-simple: 1.2vw;
+$font-simple-mob: 3vw;
 $grey: #595d69;
 $grey-shadow: rgba(33, 99, 232, 0.1);
 @font-face {
@@ -262,24 +263,48 @@ body{
                 display: grid;
                 grid-template-columns: auto;
                 justify-content: center;
+                margin: 3vw 0;
+                row-gap: 3vw;
+                column-gap: 3vw;
                 .box{
-                    width: 90%;
                     position: relative;
+                    display: flex;
+                    justify-content: center;
                     .img{
                         display: flex;
                         justify-content: center;
-                        img{
-                            height: 50vh;
-                            border-radius: 1vw;
+                        a{
+                            img{
+                                height: 50vh;
+                                width: 100%;
+                                border-radius: 1vw;
+                                filter: brightness(50%);
+                                object-fit: cover;
+                                object-position: top;
+                            }
                         }
                     }
                     .info{
                         position: absolute;
                         display: flex;
+                        left: 2vw;
                         flex-direction: column;
                         bottom: 2vw;
                         a{
-                            font-size: 3vw;
+                            color: white;
+                            display: flex;
+                            align-items: center;
+                        }
+                        .btn{
+                            font-size: 2vw;
+                            width: fit-content;
+                            i{
+                                margin-right: 1vw;
+                                font-size: 1.6vw;
+                            }
+                            padding: 0.5vw 1vw;
+                            border-radius: 0.6vw;
+                            margin-bottom: 1vw;
                         }
                     }
                 }        
@@ -300,6 +325,10 @@ body{
 }
 @media only screen and (max-width: 999px) {
     body{
+        font-size: $font-simple-mob;
+        a{
+            font-size: $font-simple-mob;
+        }
         header{
             .headerClass{
                 .float0{

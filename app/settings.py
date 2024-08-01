@@ -11,6 +11,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'main',
+    'articles',
 ]
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

@@ -111,14 +111,18 @@ body{
                     width: fit-content;
                     margin-right: 1vw;
                 }
-                a{
-                    color: $grey;
-                    text-overflow: ellipsis;
-                    overflow: hidden;
-                    white-space: nowrap;
-                }
-                a:hover{
-                    color: $blue;
+                .tendtxtbox{
+                    width: 90%;
+                    div{
+                        .txtbox{
+                            a{
+                                color: $grey;
+                            }
+                            a:hover{
+                                color: $blue;
+                            }
+                        }
+                    }
                 }
             }
         }

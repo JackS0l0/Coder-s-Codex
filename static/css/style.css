@@ -105,13 +105,13 @@ body header .headerClass .float2 .trend {
   width: fit-content;
   margin-right: 1vw;
 }
-body header .headerClass .float2 a {
-  color: #595d69;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
+body header .headerClass .float2 .tendtxtbox {
+  width: 90%;
 }
-body header .headerClass .float2 a:hover {
+body header .headerClass .float2 .tendtxtbox div .txtbox a {
+  color: #595d69;
+}
+body header .headerClass .float2 .tendtxtbox div .txtbox a:hover {
   color: rgb(0, 150, 255);
 }
 body main .mainClass .welcomeClass {

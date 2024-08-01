@@ -1,6 +1,11 @@
-$('.autoplay').slick({
-    slidesToShow: 3,
-    slidesToScroll: 1,
+$('.tendtxtbox').slick({
+    arrows: false,
     autoplay: true,
-    autoplaySpeed: 2000,
+    dots:false,
+    infinite: true,
+    adaptiveHeight: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplaySpeed: 3000,
+    speed: 5000,
 });

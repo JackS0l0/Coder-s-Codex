@@ -2,7 +2,9 @@
 <header>
     <div class="headerClass">
         <div class="float0">
-            <a href="#">Discounts for opening</a>
+            {% for post in topadvertising %}
+                <a href="#">{{post.txt}}</a>
+            {% endfor %}
             <button class="btn"><i class="bi bi-x-circle-fill"></i></button>
         </div>
         <div class="float1">
@@ -37,7 +39,11 @@
         </div>
         <div class="float2">
             <p class="trend">Trending:</p>
-            <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque voluptates, cumque molestiae eaque est necessitatibus non dolor aspernatur tenetur fuga nulla autem? Quibusdam iusto, temporibus dolores illo neque praesentium nihil!</a>
+            <div class="tendtxtbox">
+                {% for post in trend %}
+                    <div><div class="txtbox"><a href="#">{{post.txt}}</a></div></div>
+                {% endfor %}
+            </div>
         </div>
     </div>
 </header>

@@ -1,4 +1,5 @@
 {% load static %}
+{% load i18n %}
 <header>
     <div class="headerClass">
         <div class="float0">
@@ -12,12 +13,26 @@
                 <a href="{% url 'homepage' %}">Coder's Codex</a>
             </span>
             <span>
-                <a href="#">Templates</a>
-                <a href="#">Blog</a>
-                <a href="#">Contact</a>
-                <a href="#">About me</a>
+                <a href="#" class="btn">Templates</a>
+                <div class="dropdown">
+                    <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">{% trans 'Blog' %}</button>
+                    <ul class="dropdown-menu">
+                        {% for post in categories %}
+                            <li><a class="dropdown-item" href="#">{{post.name}}</a></li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                <a href="#" class="btn">Contact</a>
+                <a href="#" class="btn">About me</a>
             </span>
             <span>
+                <div class="dropdown">
+                    <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-translate"></i></button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="{% url 'set-language' 'en' %}">EN</a></li>
+                        <li><a class="dropdown-item" href="{% url 'set-language' 'ru' %}">RU</a></li>
+                    </ul>
+                </div>
                 <div class="searchClass">
                     <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"><i class="bi bi-search"></i></button>
                     <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
